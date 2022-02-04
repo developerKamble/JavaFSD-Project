@@ -2,7 +2,7 @@ package com.phase1.project;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class ArithmaticCalculator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
