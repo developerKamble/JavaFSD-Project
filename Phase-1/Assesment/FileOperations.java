@@ -30,7 +30,7 @@ public class FileOperations {
 		Scanner sc=new Scanner(System.in);
 
 		
-		 void addFile(String filename) throws IOException {
+		 void createFile(String filename) throws IOException {
 		        File filepath = new File(foldername +"/"+filename);
 		        String[] list = foldername.list();
 		        for (String file: list) {
@@ -82,7 +82,7 @@ public class FileOperations {
 				case '1': {
 					System.out.print("↳ Adding a file...Please Enter a File Name : ");
                     String filename = sc.next().trim().toLowerCase();
-                    addFile(filename); 
+                    createFile(filename); 
 				          break;
 				}
 				case '2':{
