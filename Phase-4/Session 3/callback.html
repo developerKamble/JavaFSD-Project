@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Callback - Passing functions</h2>
+
+    <script>
+     
+     function greeting(name){
+         console.log("Welcome  : " +name);
+     }
+      
+     function fullname(fname,lname,funct){
+        name=fname+" "+lname;
+        console.log("fullname is " +name);
+        funct(name);
+     }
+
+     fullname("komal","kamble",greeting);
+
+     function functionone(x){
+         alert(x);
+     }
+
+     function functiontwo(var1,callback){
+         callback(var1);
+     }
+
+     functiontwo(2,functionone);
+    </script>
+</body>
+</html>

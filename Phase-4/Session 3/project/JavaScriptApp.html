@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+</head>
+
+<body>
+
+    <h1>Budget Planner</h1>
+    <Script>
+        var map=new Map();
+        function addExpenses(name,cost){
+            map.set(name,cost);
+        }
+           
+        function removeExpenses(name){
+            if(map.has(name)){
+                console.log("present.....")
+                map.delete(name);
+            }else{
+                console.log("not present "+name)
+            }
+        }
+        function showAllExpenses(){
+            console.log("Map printing.........")
+             console.log(map);
+        }
+        function calculateBudget(){
+            for(var i=0;i<map.length;i++){
+             var sum =sum+map.get(name);
+            }
+            return sum;
+        }
+
+        addExpenses("First","20000");
+        addExpenses("second","12000");
+        addExpenses("third","32000");
+       addExpenses("fourth","25000");
+       addExpenses("fifth","45000");
+         addExpenses("sixth","50000");
+      // removeExpenses(first);
+         showAllExpenses();
+        console.log("Total  expenses : "+calculateBudget());
+    </Script>
+</body>
+
+</html>
