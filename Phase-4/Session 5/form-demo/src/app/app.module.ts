@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UserComponent } from './user/user.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    UserComponent
+    UserComponent,
+    PipedemoComponent,
+    SwitchdemoComponent
   ],
   imports: [
     BrowserModule,
