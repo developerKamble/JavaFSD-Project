@@ -1,0 +1,37 @@
+.banner{
+    width: 100%;
+    height: auto;
+}
+.bgimg{
+    
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 16%);
+     
+ }
+ .img{
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.right
+{   top:auto;
+    right: 16px;
+    color: cyan;
+}
+.centered {
+    
+    position: absolute;
+    top: 100%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    
+  }
+  p{
+      font-style: verdana;
+      font-size: 25px;
+      color: black;
+      font-weight: 700;
+      margin-top: 0;
+  
+  }
+
